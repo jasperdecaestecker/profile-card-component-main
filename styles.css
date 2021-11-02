@@ -1,0 +1,118 @@
+:root {
+  --color-dark-cyan: hsl(185, 75%, 39%);
+  --color-dark-blue: hsl(229, 23%, 23%);
+  --color-dark-gray-blue: hsl(227, 10%, 46%);
+  --color-dark-gray: hsl(0, 0%, 59%);
+  --color-dark-light-gray: rgb(218, 218, 218);
+}
+
+/* reset css */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('./images/bg-pattern-bottom.svg'),
+    url('./images/bg-pattern-top.svg');
+  background-position: right -200px bottom -600px, left -200px top -600px;
+  background-repeat: no-repeat, no-repeat;
+  background-color: var(--color-dark-cyan);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  margin: auto;
+  height: 100vh;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  min-width: 320px;
+  text-align: center;
+}
+
+@media (max-width: 375px) {
+  body {
+    background-position: right -700px bottom -700px, left -700px top -700px;
+  }
+
+  body .card {
+    width: 95%;
+    min-width: 0px;
+  }
+
+  body .card__body {
+    padding: 75px 30px 20px 30px;
+  }
+}
+
+.card__header {
+  background-image: url('images/bg-pattern-card.svg');
+  width: 100%;
+  height: 130px;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+}
+
+.card__header .card__avatar {
+  border-radius: 50%;
+  border: solid 5px white;
+  position: absolute;
+  top: 78px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.card__body {
+  padding: 75px 60px 20px 60px;
+  color: var(--color-dark-gray-blue);
+  line-height: 1.6rem;
+}
+
+.card__body strong {
+  font-weight: 700;
+  color: var(--color-dark-blue);
+}
+
+.card__body strong span {
+  font-weight: 400;
+  color: var(--color-dark-gray-blue);
+}
+
+.card__body > span {
+  font-size: 0.9rem;
+}
+
+.card__footer {
+  border-radius: 0 0 8px 8px;
+  border-top: 1px solid var(--color-dark-light-gray);
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.card__footer .card__stat {
+  font-weight: 400;
+  color: var(--color-dark-gray-blue);
+  font-size: 0.6rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.05rem;
+}
+
+.card__footer .card__stat div {
+  font-weight: 700;
+  color: var(--color-dark-blue);
+  font-size: 1rem;
+  letter-spacing: 0rem;
+}
