@@ -8,7 +8,7 @@ I kept things simple and only use basic css and html. I used BEM methodology to 
 
 Feedback? [Feedback page](https://www.frontendmentor.io/solutions/stats-preview-card-component-with-pure-css-flexbox-grid-KlYlzhqBs)
 
-[Live Page - Netlify](https://reverent-dijkstra-6d12f9.netlify.app/)
+[Live Page - Netlify](https://serene-dijkstra-cb8f62.netlify.app/)
 
 ## Useful resources
 
